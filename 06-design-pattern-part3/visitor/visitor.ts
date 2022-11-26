@@ -50,7 +50,7 @@ class ListVisitor implements Visitor {
         if (entry instanceof Group) {
             console.log(`${entry.getCode()}: ${entry.getName()}`);
         } else {
-            console.log(`  ${entry.getCode()}: ${entry.getName()}`);
+            console.log(`${entry.getCode()}: ${entry.getName()}`);
         }
 
         entry.getChildren().forEach(child => child.accept(this));
